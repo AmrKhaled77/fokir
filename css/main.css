@@ -30,6 +30,12 @@ a{
     text-decoration: none;
 }
 
+.centerY{
+    position: relative;
+    top: 50;
+    transform: translateY(-50%);
+}
+
 
 
 
@@ -140,7 +146,7 @@ transform: translatey(-50%);
 /* start about */
 
 .about{
-    height: 70vb;
+    height: 75vb;
     margin-top: 7%;
     
 }
@@ -367,7 +373,7 @@ margin-bottom: 15px;
 
 
 .protfolio{
-    height: 100vb;
+    height: 120vb;
     background-color: white;
     overflow: hidden;
     
@@ -439,21 +445,357 @@ margin-bottom: 15px;
 .protfolio .items .item{
     float: left;
     width: 30%;
-    height: 300px;
-    background-color: #EC2403;
-    margin: 0x;
+    height: fit-content;
+ position: relative;
+    margin-top: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 35px;
+  transition: 1s;
+  text-align: center;
     
     
 }
-
-.protfolio .items .item .image img{
+.protfolio .items .item:hover::after{
+    
   
+    opacity: 0.5;
+    transition: opacity 1s ;
   
-    width: 100%;
+    
+    
+}
+.protfolio .items .item::after{
    
+    content: " ";
+    position: absolute;
+    background-color: #7A7879;
+    inset: 0;
+    
+    
+    opacity: 0;
+
+    margin: auto;
+    /* transition:  1s;
+   */
+    
+    
+}
+.protfolio .items .item img{
+    
+  
+  width: 100%;
+    
+    
 }
 
 
 
 
 /* end about */
+
+
+/* start part-two
+ */
+.part-two
+{
+    height: 40vb;
+    background-color: #F1F1F1;
+    
+    position: relative;
+}
+.part-two
+ .items{
+   
+    padding-block:5% ;
+}
+.part-two
+ .items .item{
+    text-align: center;
+    float: left;
+    width: 25%;
+   
+    
+    
+}
+
+.part-two
+ .items .item i{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.part-two
+ .items .item p{
+    margin-top: 10px;
+ 
+}
+.part-two
+ .items .item span{
+    font-size: 28px;
+    font-weight: bold;
+ 
+}
+
+/* end part-two*/
+
+
+
+/* start testimonial*/
+
+.testimonial{
+    height: 60vb;
+    
+}
+.body{
+    position: relative;
+}
+.testimonial .body{
+    
+    margin: 40px auto;
+  height: 250px;
+  width: 800px;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+}
+.testimonial .body .content{
+    box-sizing: border-box;
+    margin-left: 15%;
+    padding: 40px 30px 40px 40px;
+}
+
+.testimonial .body .content h3{
+    margin-block:7px ;
+}
+.testimonial .body .content i{
+    margin-block:7px ;
+}
+.testimonial .body .content p{
+    margin-block:5px ;
+}
+
+.tringle{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 85px solid #FF305B;
+    border-top:85px solid #FF305B ;
+    border-right: 85px solid transparent;
+    border-bottom: 85px solid transparent;
+    border-top-left-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonial .body .image{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+top: 45px;
+left: 40px;
+
+overflow: hidden;
+}
+.testimonial .body .image img{
+
+    width: 100%;
+}
+
+
+
+/* end testimonial*/
+
+
+/* start Blog*/
+
+
+.blog{
+    background-color: #F1F1F1;
+    height: 95vb;
+    overflow: hidden;
+}
+
+.blog .body .item{
+    margin-top: 4%;
+    margin-left: 3.333333333%;
+    float: left;
+    width: 30%;
+    background-color: white;
+}
+.blog .body .item .data{
+    padding: 25px;
+    
+}
+.blog .body .item img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.blog .body .item iframe{
+ 
+  width: 100%;
+  margin-bottom: 20px;
+}
+.blog .body .item span{
+  margin-block: 10px;
+}
+.blog .body .item h2{
+    margin-block: 10px;
+    transition: 1s;
+}
+.blog .body .item p{
+    margin-block: 10px;
+    line-height: 1.6;
+}
+.blog .body .item a{
+    text-decoration: none;
+    color: black;
+  
+    transition: 1s;
+    
+}
+.blog .body .item a:hover{
+    
+    color: #FF305B;
+   
+    
+}
+.blog .body .item h2:hover{
+    
+    color: #FF305B;
+   
+    
+}
+.blog .body .item i{
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    margin-left: 5px;
+    
+}
+
+
+/* end Blog*/
+
+
+/* start Contact Us*/
+
+.Contact-us{
+    height: 65vb;
+}
+
+.form{
+    width: 700px;
+    margin: 40px auto;
+    
+}
+
+.input-group{
+    width: 750px;
+   
+}
+.name{
+    margin-right: 3.4%;
+    width: 48%;
+}
+.email{
+    width: 48%;
+}
+.form .input-group input{
+    
+
+    
+    
+    
+}
+.form .subject{
+    width: 100%;
+}
+
+input{
+    box-sizing: border-box;
+    margin-block: 2%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #E1E1E1;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin-block: 2%;
+    padding: 10px;
+    border-radius: 4px;
+    height: 80px;
+    border: 2px solid #E1E1E1;
+
+}
+
+textarea:focus {
+    
+    border-color: #ff3366; 
+    box-shadow: 0 0 5px rgba(255, 51, 102, 0.5);
+}
+
+.form button{
+width: 140px;
+height: 40px;
+color: white;
+background-color: #FF305B;
+border-radius: 4px;
+border: none;
+
+
+}
+
+/* end Contact Us*/
+
+
+/* start footer*/
+.footer{
+    height: 20vb;
+    background-color: #333333;
+  
+    overflow: hidden;
+}
+
+.footer .icons i{
+    color: white;
+    margin-inline: 10px;
+    transition: 0.5s;
+
+}
+
+.footer .icons i:hover{
+    color: #ff3366;
+   
+
+}
+
+
+.footer .icons {
+   margin-top: 5%;
+    
+    text-align: center;
+
+  
+
+}
+
+.footer .Copy-Right{
+    width: 100%;
+    text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+
+.footer  a{
+    
+    text-decoration: none;
+    color: #ff3366;
+}
+
+
+/* end footer*/
