@@ -5,6 +5,9 @@
     padding: 0;
 }
 
+a{
+    cursor: pointer;
+}
 
 h1,h2,h3,h4,h5,h6{
 
@@ -61,6 +64,9 @@ a{
    
   
 }
+.logo h3{
+    cursor: pointer;
+}
 
 .bg{
     width: 100%;
@@ -90,6 +96,7 @@ a{
     float: right;
 }
 
+
 .nav-bar .nav-item a{
 
 text-decoration: none;
@@ -114,6 +121,8 @@ color: #FF305B;
 
 
 
+
+
 .home-body h3{
     color: white;
     font-size: 24;
@@ -125,10 +134,20 @@ color: #FF305B;
     font-weight: 700;
     margin: 15px;
 }
+
+
+
+
+
 .home-body p{
+    
+    overflow: hidden;
     color: whitesmoke;
     font-size: 22px;
     margin: 15px;
+     
+    
+    
 }
 
 .home-body{
@@ -335,6 +354,7 @@ border-radius: 4px;
 }
 
 .Services .item{
+    cursor: pointer;
  
  margin-top: 50px;
 }
@@ -452,6 +472,7 @@ margin-bottom: 15px;
 }
 
 .protfolio .items .item{
+    cursor: pointer;
     float: left;
     width: 30%;
     height: fit-content;
@@ -496,6 +517,9 @@ margin-bottom: 15px;
   width: 100%;
     
     
+}
+.button{
+    cursor: pointer;
 }
 
 
@@ -635,6 +659,7 @@ overflow: hidden;
 }
 
 .blog .body .item{
+    
     margin-top: 4%;
     margin-left: 3.333333333%;
     float: left;
@@ -646,6 +671,7 @@ overflow: hidden;
     
 }
 .blog .body .item img{
+    cursor: pointer;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -658,6 +684,7 @@ overflow: hidden;
   margin-block: 10px;
 }
 .blog .body .item h2{
+    cursor: pointer;
     margin-block: 10px;
     transition: 1s;
 }
@@ -669,6 +696,7 @@ overflow: hidden;
 .blog .body .item a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
   
     transition: 1s;
     
@@ -750,9 +778,16 @@ textarea{
 }
 
 textarea:focus {
+    outline: none;
+  
+    border:1px solid red; 
     
-    border-color: #ff3366; 
-    box-shadow: 0 0 5px rgba(255, 51, 102, 0.5);
+}
+input:focus {
+    outline: none;
+    
+    border:1px solid red; 
+  
 }
 
 .form button{
