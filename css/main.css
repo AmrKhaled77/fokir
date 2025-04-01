@@ -489,7 +489,7 @@ margin-bottom: 15px;
 .protfolio .items .item:hover::after{
     
   
-    opacity: 0.5;
+    opacity: 0.6;
     transition: opacity 1s ;
   
     
@@ -498,7 +498,7 @@ margin-bottom: 15px;
 .protfolio .items .item:hover .icon{
     
   
-    opacity: 1;
+    opacity: 0.6;
     
   
     
@@ -512,7 +512,7 @@ margin-bottom: 15px;
    
     content: " ";
     position: absolute;
-    background-color: #7A7879;
+    background-color: #0d0d0dc2;
     inset: 0;
     transition: opacity 1s ;
     
